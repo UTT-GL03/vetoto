@@ -1,0 +1,62 @@
+@startuml
+class Sheet {
+    name: string
+    refresh: number
+    skill_points: number
+    endScene()
+    endSession()
+    minorMilestone()
+    significantMilestone()
+    majorMilestone()
+}
+class Aspect {
+    name: string
+}
+class Stunt {
+    bonus: number|undefined
+    name: string
+    description: string
+}
+class SheetSkillList {
+    modifier: number
+    roll(skill: Skill): number
+}
+class Skill {
+    name: string
+    description: string
+}
+class StressBox {
+    size: number
+    checked: boolean
+}
+class Consequence {
+    value: number
+}
+class StressTrack {
+    type: string
+}
+class Campaign {
+    title: string
+}
+
+abstract class Action {
+    type: string
+    failure()
+    tie()
+    success()
+    successWithStyle()
+}
+
+Sheet "1" *-- Stunt
+Sheet "1" *-- Aspect : Aspects
+Sheet "1" *-- SheetSkillList
+Sheet "1" *-- Consequence : Consequence slots
+Sheet "1" *-- StressTrack
+Consequence "1" *-- "0..1" Aspect
+StressTrack "1" *-- StressBox
+Campaign "1" *-- Sheet
+
+Sheet o-- Sheet : AccessesTo
+SheetSkillList o-- "1" Skill
+Stunt o-- "1" Skill
+@enduml
