@@ -34,3 +34,6 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
   4. Il choisit une autre fiche de personnage et la consulte.
 
 ## Impact de l'exécution des scénarios auprès de différents services concurrents
+L'EcoIndex d'un page, qui va de A à G, est calculé par rapport au classement d'un page parmi toutes les autres du monde selon le nombre de requêtes qu'elle lance, le nombre d'éléments qu'elle contient et le poids des téléchargements.
+
+Les impacts des scénarios ont été comparés en utilisant deux outils différents : Roll20 et Character Sheet Online. 
