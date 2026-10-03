@@ -28,10 +28,11 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
   3. Il retourne consulter les informations générales de la campagne.
      
 ## Scénario : "Consultation par un maitre du jeu des fiche de personnages de ses joueurs"
-  1. Le maitre du jeu accède à une campagne
-  2. Il choisit une fiche de personnage d'un des joueurs et la consulte.
-  3. Il retourne consulter les informations générales de la campagne.
-  4. Il choisit une autre fiche de personnage et la consulte.
+  1. Le maitre du jeu accède à une page d'accueil de séléction de campagne grâce à un favori (donc sans le moteur de recherche).
+  2. Il séléctionne une campagne sur la page.  
+  3. Il choisit une fiche de personnage d'un des joueurs et la consulte.
+  4. Il retourne consulter les informations générales de la campagne.
+  5. Il choisit une autre fiche de personnage et la consulte.
 
 ## Impact de l'exécution des scénarios auprès de différents services concurrents
 L'EcoIndex d'un page, qui va de A à G, est calculé par rapport au classement d'un page parmi toutes les autres du monde selon le nombre de requêtes qu'elle lance, le nombre d'éléments qu'elle contient et le poids des téléchargements.
