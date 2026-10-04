@@ -19,3 +19,22 @@ L'application en elle-même vient avec ses propres bienfaits. Premièrement, un 
 De plus les solutions techniques qui sont proposées renforcent la compatibilité du logiciel avec les valeurs d'une démocratie technique, notamment par la possibilité d'auto-hébergement. Par ailleurs, le choix de faire s'exécuter la majorité du logiciel sur les terminaux utilisateurs réduit largement les ressources serveur consommées.
 
 On peut également supposer que dans les cas où une partie à distance sur cet outil se substituerait à un rassemblement chez l'un des joueurs, les émissions de gaz à effets de serre seraient réduites : en effet, l'usage de véhicules polluant serait alors inutile et son absence contrebalancerait largement celui des appareils informatiques.
+
+## Scénarios d'usage et impacts
+
+## Scénario : "Consultation par un joueur de sa fiche de personnage"
+  1. Le joueur accède à une campagne via un lien fourni par le maitre du jeu.
+  2. Il choisit une de ses fiches de personnage et la consulte.
+  3. Il retourne consulter les informations générales de la campagne.
+     
+## Scénario : "Consultation par un maitre du jeu des fiche de personnages de ses joueurs"
+  1. Le maitre du jeu accède à une page d'accueil de séléction de campagne grâce à un favori (donc sans le moteur de recherche).
+  2. Il séléctionne une campagne sur la page.  
+  3. Il choisit une fiche de personnage d'un des joueurs et la consulte.
+  4. Il retourne consulter les informations générales de la campagne.
+  5. Il choisit une autre fiche de personnage et la consulte.
+
+## Impact de l'exécution des scénarios auprès de différents services concurrents
+L'EcoIndex d'un page, qui va de A à G, est calculé par rapport au classement d'un page parmi toutes les autres du monde selon le nombre de requêtes qu'elle lance, le nombre d'éléments qu'elle contient et le poids des téléchargements.
+
+Les impacts des scénarios ont été comparés en utilisant deux outils différents : Roll20 et Character Sheet Online. 
