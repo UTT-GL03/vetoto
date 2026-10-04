@@ -50,13 +50,14 @@ abstract class Action {
 Sheet "1" *-- Stunt
 Sheet "1" *-- Aspect : Aspects
 Sheet "1" *-- SheetSkillList
-Sheet "1" *-- Consequence : Consequence slots
+Sheet "1" *-- Consequence : consequence_slots
 Sheet "1" *-- StressTrack
-Consequence "1" *-- "0..1" Aspect
 StressTrack "1" *-- StressBox
-Campaign "1" *-- Sheet
 
-Sheet o-- Sheet : AccessesTo
+Sheet o-- Sheet : accesses_to
 SheetSkillList o-- "1" Skill
 Stunt o-- "1" Skill
+Sheet o-- Sheet : contains
+
+Aspect <|-- Consequence
 @enduml
