@@ -46,3 +46,9 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
 L'EcoIndex d'un page, qui va de A à G, est calculé par rapport au classement d'un page parmi toutes les autres du monde selon le nombre de requêtes qu'elle lance, le nombre d'éléments qu'elle contient et le poids des téléchargements.
 
 Les impacts des scénarios ont été comparés en utilisant deux outils différents : Roll20 et Character Sheet Online. 
+
+|Service|Score (%)|Classe|Détail des mesures|
+|-------|---------|------|------------------|
+|Roll20 |24,68    |F     |[Scénario MJ](./benchmark/Scenario%20MJ%20Roll20.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv)|
+|Character Sheet Online |42,33    |D|[Scénario MJ](./benchmark/Scenario%20MJ%20Character%20Sheet%20Online.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv)|
+
