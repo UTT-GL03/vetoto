@@ -22,7 +22,7 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
 
 ## Scénarios d'usage et impacts
 
-## Scénario : "Consultation par un joueur de sa fiche de personnage"
+### Scénario : "Consultation par un joueur de sa fiche de personnage"
   1. Le joueur accède à une campagne via un lien fourni par le maitre du jeu.
   2. Il choisit une de ses fiches de personnage et la consulte.
   3. Il retourne consulter les informations générales de la campagne.
@@ -31,7 +31,7 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
 
 [Résultats du scénario pour Roll20](./benchmark/scenarioJoueur%20Roll20.csv)
 
-## Scénario : "Consultation par un maitre du jeu des fiche de personnages de ses joueurs"
+### Scénario : "Consultation par un maitre du jeu des fiche de personnages de ses joueurs"
   1. Le maitre du jeu accède à une page d'accueil de séléction de campagne grâce à un favori (donc sans le moteur de recherche).
   2. Il sélectionne une campagne sur la page.  
   3. Il choisit une fiche de personnage d'un des joueurs et la consulte.
@@ -42,7 +42,7 @@ On peut également supposer que dans les cas où une partie à distance sur cet 
 
 [Résultats du scénario pour Roll20](./benchmark/Scenario%20MJ%20Roll20.csv)
 
-## Impact de l'exécution des scénarios auprès de différents services concurrents
+### Impact de l'exécution des scénarios auprès de différents services concurrents
 L'EcoIndex d'un page, qui va de A à G, est calculé par rapport au classement d'un page parmi toutes les autres du monde selon le nombre de requêtes qu'elle lance, le nombre d'éléments qu'elle contient et le poids des téléchargements.
 
 Les impacts des scénarios ont été comparés en utilisant deux outils différents : Roll20 et Character Sheet Online. 
