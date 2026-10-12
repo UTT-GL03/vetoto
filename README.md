@@ -75,7 +75,7 @@ Le modèle économique d'un service est un facteur non négligeable dans son imp
 dépendant majoritairement des publicités aura un impact bien plus conséquent dû à l'abondance d'images ou de vidéos.
 De plus, il est nécessaire que le produit génère assez d'argent pour subsister dans le temps.
 
-Pour concevoir un modèle économique viable,, nous allons d'abord nous pencher sur les modèles économiques courants dans
+Pour concevoir un modèle économique viable, nous allons d'abord nous pencher sur les modèles économiques courants dans
 l'industrie.
 
 ### Modèles économiques de l'industrie
@@ -100,3 +100,6 @@ options connues sont FoundryVTT (principal concurrent de Roll20) et Talespire.
 
 Certains projets à visée non marchande permettent les dons. On les retrouve également aux côtés d'autres monétisations
 pour des petits projets. On retrouve par exemple cette approche chez Character Sheet Online.
+
+### Modèle économique proposé
+
