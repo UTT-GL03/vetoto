@@ -91,4 +91,12 @@ en ressources.
 
 #### Vente de licence logicielle
 
+Quelques acteurs ont opté pour le modèle de la vente de logiciels. Celui-ci est d'ailleurs généralement plus valorisé
+par leurs clients que le modèle par abonnement. La majorité des entreprises ayant opté pour cette option vendent des
+logiciels nettement plus lourds que la moyenne, qui justifient alors un coût comparable à celui d'un jeu vidéo. Quelques
+options connues sont FoundryVTT (principal concurrent de Roll20) et Talespire.
+
 #### Donations
+
+Certains projets à visée non marchande permettent les dons. On les retrouve également aux côtés d'autres monétisations
+pour des petits projets. On retrouve par exemple cette approche chez Character Sheet Online.
