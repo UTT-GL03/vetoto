@@ -54,4 +54,4 @@ Les impacts des scénarios ont été comparés en utilisant deux outils différe
 
 
 ### Modèle économique 
-
+Le modèle économique d'un service est un facteur non négligeable dans son impact écologique, par exemple, un service dépendant majoritairement des publicités aura un impact bien plus conséquent dû à l'abondance d'images ou de vidéos.  
