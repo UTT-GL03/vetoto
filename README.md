@@ -48,10 +48,6 @@ polluant serait alors inutile et son absence contrebalancerait largement celui d
 2. Il choisit une de ses fiches de personnage et la consulte.
 3. Il retourne consulter les informations générales de la campagne.
 
-[Résultats du scénario pour Character Sheet Online](./benchmark/scenarioJoueur%20Character%20Sheet%20Online.csv)
-
-[Résultats du scénario pour Roll20](./benchmark/scenarioJoueur%20Roll20.csv)
-
 ### Scénario : "Consultation par un maitre du jeu des fiche de personnages de ses joueurs"
 
 1. Le maitre du jeu accède à une page d'accueil de séléction de campagne grâce à un favori (donc sans le moteur de
@@ -60,10 +56,6 @@ polluant serait alors inutile et son absence contrebalancerait largement celui d
 3. Il choisit une fiche de personnage d'un des joueurs et la consulte.
 4. Il retourne consulter les informations générales de la campagne.
 5. Il choisit une autre fiche de personnage et la consulte.
-
-[Résultats du scénario pour Character Sheet Online](./benchmark/Scenario%20MJ%20Character%20Sheet%20Online.csv)
-
-[Résultats du scénario pour Roll20](./benchmark/Scenario%20MJ%20Roll20.csv)
 
 ### Impact de l'exécution des scénarios auprès de différents services concurrents
 
@@ -77,8 +69,26 @@ Les impacts des scénarios ont été comparés en utilisant deux outils différe
 | Roll20                 | 24,68     | F      | [Scénario MJ](./benchmark/Scenario%20MJ%20Roll20.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv)                     |
 | Character Sheet Online | 42,33     | D      | [Scénario MJ](./benchmark/Scenario%20MJ%20Character%20Sheet%20Online.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv) |
 
-### Modèle économique
+## Modèle économique
 
 Le modèle économique d'un service est un facteur non négligeable dans son impact écologique, par exemple, un service
 dépendant majoritairement des publicités aura un impact bien plus conséquent dû à l'abondance d'images ou de vidéos.
-De plus, il est nécessaire que le produit génère assez d'argent pôur subsister dans le temps. 
+De plus, il est nécessaire que le produit génère assez d'argent pour subsister dans le temps.
+
+Pour concevoir un modèle économique viable,, nous allons d'abord nous pencher sur les modèles économiques courants dans
+l'industrie.
+
+### Modèles économiques de l'industrie
+
+#### Freemium
+
+La plupart des acteurs fournissant des VTT (toujours pas des vélos) s'appuient sur un modèle freemium. Parmi les plus
+notables, Roll20 ou Owlbear Rodeo ont adopté ce modèle sur une base d'abonnement en visant principalement les MJ comme
+clients.
+Les avantages freemium sont souvent basés sur une limitation sur le nombre de campagnes ou la quantité de données
+hébergeable sur le serveur de la campagne. Ils peuvent également inclure des fonctionnalités plus poussées ou gourmandes
+en ressources.
+
+#### Vente de licence logicielle
+
+#### Donations
