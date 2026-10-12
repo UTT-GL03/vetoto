@@ -52,3 +52,6 @@ Les impacts des scénarios ont été comparés en utilisant deux outils différe
 |Roll20 |24,68    |F     |[Scénario MJ](./benchmark/Scenario%20MJ%20Roll20.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv)|
 |Character Sheet Online |42,33    |D|[Scénario MJ](./benchmark/Scenario%20MJ%20Character%20Sheet%20Online.csv), [Scénario joueur](./benchmark/scenarioJoueur%20Roll20.csv)|
 
+
+### Modèle économique 
+
