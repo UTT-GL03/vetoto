@@ -80,7 +80,7 @@ l'industrie.
 
 ### Modèles économiques de l'industrie
 
-#### Freemium
+#### Abonnement freemium
 
 La plupart des acteurs fournissant des VTT (toujours pas des vélos) s'appuient sur un modèle freemium. Parmi les plus
 notables, Roll20 ou Owlbear Rodeo ont adopté ce modèle sur une base d'abonnement en visant principalement les MJ comme
@@ -103,3 +103,36 @@ pour des petits projets. On retrouve par exemple cette approche chez Character S
 
 ### Modèle économique proposé
 
+Notre proposition de modèle économique vient hybrider la vente de licence avec un modèle freemium. L'objectif sera de
+proposer une version gratuite qui ne donne pas l'impression aux utilisateurs d'être un produit d'essai réduit dans ses
+capacités par rapport à la version payante, mais plutôt une version payante étant réellement une version supérieure d'un
+produit déjà fini.
+
+Les seules limitations placées sur la version gratuites et absentes de la payante seront une
+limitation sur le nombre de campagnes, qui seront limitées au nombre de 2, ainsi que sur le nombre de fiches (le nombre
+d'éléments présents dans la campagne) qui sera limité à quelques dizaines pour ne pas être une limite frustrante pour
+les utilisateurs classiques, mais plutôt un incitatif aux plus gros utilisateurs à contribuer à la vie du projet. Les
+privilèges disponibles sur la version payante comprendront notamment des intégrations natives exclusives dans d'autres
+outils utilisés pour le jeu (discord, Owlbear Rodeo, etc) ainsi qu'une priorité sur les demandes de nouvelles
+fonctionnalités et un accès en avance aux versions beta.
+
+Le passage de la version gratuite à celle payante pourra être fait sous deux formes : un abonnement mensuel, ou bien un
+achat unique de la licence du logiciel. L'abonnement sera proposé comme une version de test, à long terme c'est une
+option assez peu rentable pour les utilisateurs, mais qui leur permet de découvrir la meilleure version de l'outil pour
+s'en servir de façon ponctuelle ou pour tester avant un achat. Les tarifs des abonnements ainsi que des licences seront
+à prix libres, avec un plancher respectivement à 3€ et 20€. Les licences auront également un prix par défaut à 30€ pour
+inciter les utilisateurs à payer davantage, prix plus viable pour nous. Bien sûr, chacun de ces achats sera fait par le
+maître du jeu uniquement, ce qui permet à chaque groupe d'amis de ne payer qu'une licence pour jouer.
+
+| Source de revenus      | Montant | Quantité mensuelle pour financer un salaire médian |
+|------------------------|---------|----------------------------------------------------|
+| Abonnements            | 3€      | 1169 (à tarif minimum)                             |
+| Licences tarif minimum | 20€     | 175                                                |
+| Licences tarif de base | 30€     | 117                                                |
+
+Nous avons favorisé ce modèle économique à la fois pour correspondre aux valeurs des utilisateurs et aux pratiques
+communes dans les communautés de jeu de rôle (financements participatifs, dons, etc) tout en permettant une grande
+accessibilité du logiciel, les tarifs de base étant largement abordables. Les publicités n'ont pas été envisagées à la
+fois en raison de leur manque de rentabilité et de leur impact écologique, mais aussi parce qu'elles sont un moyen très
+peu mobilisé dans le marché auquel nous nous attaquons, proche du jeu vidéo, où la publicité n'est pas acceptée par les
+utilisateurs.
