@@ -136,3 +136,6 @@ accessibilité du logiciel, les tarifs de base étant largement abordables. Les 
 fois en raison de leur manque de rentabilité et de leur impact écologique, mais aussi parce qu'elles sont un moyen très
 peu mobilisé dans le marché auquel nous nous attaquons, proche du jeu vidéo, où la publicité n'est pas acceptée par les
 utilisateurs.
+
+## Maquettes
+
