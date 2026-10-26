@@ -18,7 +18,16 @@ function App() {
                 </h1>
             </header>
             <Routes className="container">
-                <Route path="/campaign" element={data.sheets.map((x, i) => <Campaign {...x} key={i}/>)}/>
+                <Route
+                    path="/campaign"
+                    element={
+                        <div className="campaign-grid">
+                            {data.sheets.map((x, i) => (
+                                <Campaign {...x} key={i} />
+                            ))}
+                        </div>
+                    }
+                />
                 <Route path="/sheet/:sheetId" element={<Sheet/>}/>
             </Routes>
         </BrowserRouter>
