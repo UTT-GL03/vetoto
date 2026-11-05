@@ -48,3 +48,20 @@
   font-size: 0.875rem;
   color: #64748b;
 }
+
+.sheet-box {
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  background-color: var(--accent-bg, #f9f9f9);
+  gap: 6;
+  padding: 12px;
+  margin: 6px;
+  white-space: nowrap;
+}
+.skills {
+ display:flex;
+ flex-direction: row;
+ justify-content: left;
+ flex-wrap: wrap;
+ align-items: center;
+}
