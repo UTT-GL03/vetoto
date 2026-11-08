@@ -50,6 +50,7 @@
 }
 
 .sheet-box {
+  display: inline-block;
   border: 1px solid var(--border, #ccc);
   border-radius: 8px;
   background-color: var(--accent-bg, #f9f9f9);
@@ -58,7 +59,7 @@
   margin: 6px;
   white-space: nowrap;
 }
-.skills {
+.row {
  display:flex;
  flex-direction: row;
  justify-content: left;
