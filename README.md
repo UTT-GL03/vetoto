@@ -139,3 +139,8 @@ utilisateurs.
 
 ## Maquettes
 
+## Implémentations du scénario prioritaire
+
+Cette première version (v1.0.0) charge un échantillon de données générées aléatoirement de manière statique. Elle ne comporte que les fonctionnalités nécessaires pour réaliser le scénario prioritaire qui consiste à consulter une fiche de personnage depuis une page de campagne.
+
+<img width="1917" height="985" alt="image" src="https://github.com/user-attachments/assets/dba5058f-053f-48db-a182-9ec970c08a4d" />
