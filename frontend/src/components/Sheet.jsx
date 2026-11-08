@@ -4,7 +4,13 @@ import {useParams} from "react-router";
 function Sheet() {
     const {sheetId} = useParams();
     const sheet = data.sheets.find(x => x.id === sheetId);
-
+    const skills = [];
+    sheet.skills.map(skill =>{
+        if(!skills[skill.modifier]){
+            skills[skill.modifier] = [];
+        }
+        skills[skill.modifier].push({name: skill.name, description: skill.description})
+    });
 
     return (<>
         <h1>{sheet.name}</h1>
@@ -16,8 +22,22 @@ function Sheet() {
         <div>{sheet.aspects.map(aspect => (<p key={aspect}>{aspect}</p>))}</div>
         
         <h3>Compétences :</h3>
-        <div className='row'> {sheet.skills.sort((a,b)=> b.modifier - a.modifier).map(skill => (<span className='sheet-box' key={skill.name}>{skill.name} : +{skill.modifier} </span>))}</div>
-        
+        <table >
+            <tbody>
+                {skills.reverse().map((value, index) => (
+                    <tr key={index}>
+                        <td>+{skills.length - index -1}</td>
+                        {value.map(skill => (
+                            <td key={skill.name}>
+                                <span className="table-box">
+                                    {skill.name}
+                                </span>
+                            </td>
+                        ))}
+                    </tr>
+                ))}
+            </tbody>
+        </table>
         <h3>Prouesses :</h3>
         <div>{sheet.stunts.map(stunt => (
             <p key={stunt.name}>{stunt.name} ({stunt.skill.name}) : {stunt.description}</p>
@@ -31,7 +51,7 @@ function Sheet() {
                     {track.stress_box.map(box => (
                         <label key={box.size} className='sheet-box'> 
                             {box.size}
-                            <input type='checkbox' readOnly checked={Boolean(box.checked)} />
+                            <input type='checkbox' readOnly checked={(box.checked && JSON.parse(box.checked))} />
                         </label>
                     ))}                  
             </div>
