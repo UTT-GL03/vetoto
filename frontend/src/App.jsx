@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
             <header>
                 <h1>
-                    <img src={reactLogo}/>
+                    <img src={reactLogo} alt={"The react logo"}/>
                     VeToTo
                 </h1>
             </header>

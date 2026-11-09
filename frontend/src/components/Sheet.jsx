@@ -5,11 +5,16 @@ function Sheet() {
     const {sheetId} = useParams();
     const sheet = data.sheets.find(x => x.id === sheetId);
     const skills = [];
+    const aspects = [];
+    const consequences = [];
     sheet.skills.map(skill =>{
         if(!skills[skill.modifier]){
             skills[skill.modifier] = [];
         }
         skills[skill.modifier].push({name: skill.name, description: skill.description})
+    });
+    sheet.aspects.map(value => {
+        !value.consequence_slot && value.consequence_slot!==0 ? aspects.push(value) : consequences.push(value);
     });
 
     return (<>
@@ -19,7 +24,11 @@ function Sheet() {
             <span className='sheet-box'>Points de Destin : {sheet.fate_points}</span>
         </div>
         <h3>Aspects :</h3>
-        <div>{sheet.aspects.map(aspect => (<p key={aspect}>{aspect}</p>))}</div>
+        <div>
+            {aspects.map(aspect => (
+                <p key={aspect.name}>{aspect.name}</p>
+            ))}
+        </div>
         
         <h3>Compétences :</h3>
         <table >
@@ -56,6 +65,12 @@ function Sheet() {
                     ))}                  
             </div>
         ))}</div>
+        <h3>Conséquences :</h3>
+        <div>
+            {consequences.map(consequence => (
+                <p key={consequence.name}>{consequence.consequence_slot} : {consequence.name}</p>
+            ))}
+        </div>
         <span className='sheet-box' onClick={() => window.location.href = `/campaign/${sheet.campaign}`}>Retour à la campagne</span>
 
     </>)

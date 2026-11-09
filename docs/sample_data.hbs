@@ -1,46 +1,51 @@
 {
-  "sheets": [
-    {{#repeat min=20 max=30}}
+"sheets": [
+{{#repeat min=20 max=30}}
     {
-      "id": "{{step 1}}",
-      "campaign": {{int 0 1}},
+    "id": "{{step 1}}",
+    "campaign": {{int 0 1}},
       "name": "{{lorem min=1 max=5}}",
-      "skills": [{{#repeat min=10 max=20 comma=true}}
+    "skills": [{{#repeat min=10 max=20 comma=true}}
         {
         "name": "{{lorem min=1 max=3}}",
         "description": "{{lorem min=10 max=50}}",
         "modifier": {{int 0 5 }}
         }
-      {{/repeat}}],
-      "refresh": {{int 1 10 }},
-      "fate_points": {{int 0 10 }},
-      "aspects": [{{#repeat min=2 max=5 comma=true}}
-        "{{lorem min=2 max=15}}"
-      {{/repeat}}],
-      "stunts": [{{#repeat min=3 max=6 comma=true}}
+    {{/repeat}}],
+    "refresh": {{int 1 10 }},
+    "fate_points": {{int 0 10 }},
+    "aspects": [{{#repeat min=2 max=5 comma=true}}
+        {"name": "{{lorem min=2 max=15}}"}
+    {{/repeat}},
+    {{#repeat min=1 max=3 comma=true}}
         {
-          "name": "{{lorem min=1 max=3}}",
-          "description": "{{lorem min=10 max=50}}",
-          "bonus": {{int 0 4 }},
-          "skill": {
-            "name": "{{lorem min=1 max=3}}",
-            "description": "{{lorem min=10 max=50}}"
-          }
+          "name": "{{lorem min=0 max=10}}",
+          "consequence_slot": {{step 2}}
         }
-      {{/repeat}}],
-      "stress_track": [{{#repeat min=1 max=3 comma=true}}
+    {{/repeat}}],
+    "stunts": [{{#repeat min=3 max=6 comma=true}}
         {
-          "type": "{{lorem min=1 max=1}}",
-          "stress_box": [{{#repeat min=2 max=4 comma=true}}
+        "name": "{{lorem min=1 max=3}}",
+        "description": "{{lorem min=10 max=50}}",
+        "bonus": {{int 0 4 }},
+        "skill": {
+        "name": "{{lorem min=1 max=3}}",
+        "description": "{{lorem min=10 max=50}}"
+        }
+        }
+    {{/repeat}}],
+    "stress_track": [{{#repeat min=1 max=3 comma=true}}
+        {
+        "type": "{{lorem min=1 max=1}}",
+        "stress_box": [{{#repeat min=2 max=4 comma=true}}
             {
-              "size": "{{step 1}}",
-              "checked": "{{boolean}}"
+            "size": "{{step 1}}",
+            "checked": "{{boolean}}"
             }
-          {{/repeat}}]
+        {{/repeat}}]
         }
-      {{/repeat}}]
-
+    {{/repeat}}]
     }
-    {{/repeat}}
-  ]
+{{/repeat}}
+]
 }
