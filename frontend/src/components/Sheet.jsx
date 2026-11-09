@@ -56,7 +56,7 @@ function Sheet() {
                     ))}                  
             </div>
         ))}</div>
-        <span className='sheet-box' onClick={() => window.location.href = `/campaign`}>Retour à la campagne</span>
+        <span className='sheet-box' onClick={() => window.location.href = `/campaign/${sheet.campaign}`}>Retour à la campagne</span>
 
     </>)
 }
