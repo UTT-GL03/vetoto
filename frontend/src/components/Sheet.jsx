@@ -71,7 +71,7 @@ function Sheet() {
                 <p key={consequence.name}>{consequence.consequence_slot} : {consequence.name}</p>
             ))}
         </div>
-        <span className='sheet-box' onClick={() => window.location.href = `/campaign`}>Retour à la campagne</span>
+        <span className='sheet-box' onClick={() => window.location.href = `/campaign/${sheet.campaign}`}>Retour à la campagne</span>
 
     </>)
 }

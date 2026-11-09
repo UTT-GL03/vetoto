@@ -1,0 +1,14 @@
+{
+"campaigns": [{{#repeat min=2 max=5 comma=true}}
+    {
+    "id": "{{step 1}}",
+    "name": "{{lorem min=1 max=5}}",
+    "aspects": [
+    {{#repeat min=1 max=5 comma=true}}
+        {"name": "{{lorem min=5 max=20}}"}
+    {{/repeat}}
+    ]
+    }
+{{/repeat}}
+]
+}
