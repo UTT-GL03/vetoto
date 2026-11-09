@@ -4,7 +4,7 @@
 }
 
 /* Gallery / Grid Container */
-.campaign-grid {
+.preview-grid {
   display: grid;
   /* Automatically creates 2 or 3 responsive columns based on screen width */
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

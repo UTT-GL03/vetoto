@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 function Sheet() {
     const {sheetId} = useParams();
-    const [sheet, setSheet] = useState({name:'', skills: [], aspects: [], consequences: [], refresh: undefined, fate_points: '', stunts: [], stress_track: []});
+    const [sheet, setSheet] = useState({name:'', skills: [], aspects: [], consequences: [], refresh: undefined, fate_points: '', stunts: [], stress_track: [], campaign: undefined});
     
     useEffect(()=>{
     fetch('/sample_data.json')
@@ -23,12 +23,12 @@ function Sheet() {
             !value.consequence_slot && value.consequence_slot!==0 ? aspects.push(value) : consequences.push(value);
         });
     
-        setSheet({name: dataSheet.name, refresh: dataSheet.refresh, fate_points: dataSheet.fate_points, stunts: dataSheet.stunts, stress_track: dataSheet.stress_track, skills: skills, aspects: aspects, consequences: consequences })
+        setSheet({name: dataSheet.name, refresh: dataSheet.refresh, fate_points: dataSheet.fate_points, stunts: dataSheet.stunts, stress_track: dataSheet.stress_track, skills: skills, aspects: aspects, consequences: consequences, campaign: dataSheet.campaign })
       })
     },[sheetId])
 
-    const {name, refresh, fate_points, stunts, stress_track, skills, aspects, consequences} = sheet
-    console.log(skills)
+    const {name, refresh, fate_points, stunts, stress_track, skills, aspects, consequences, campaign} = sheet
+
     return (<>
         <h1>{name}</h1>
         <div>
@@ -83,7 +83,7 @@ function Sheet() {
                 <p key={consequence.name}>{consequence.consequence_slot} : {consequence.name}</p>
             ))}
         </div>
-        <span className='sheet-box' onClick={() => window.location.href = `/campaign`}>Retour à la campagne</span>
+        <span className='sheet-box' onClick={() => window.location.href = `/campaign/${campaign}`}>Retour à la campagne</span>
 
     </>)
 }

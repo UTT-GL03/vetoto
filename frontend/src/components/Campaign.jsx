@@ -1,10 +1,21 @@
-function Campaign({id, name, aspects}) {
-    return (<div className="campaign" onClick={() => window.location.href = `/sheet/${id}`}>
-        <h2>{name}</h2>
-        <header>
-            <span> {aspects.length > 0 && aspects[0].name} </span>
-        </header>
+import {useParams} from "react-router";
+import { useState, useEffect } from 'react'
+import SheetPreview from "./SheetPreview.jsx";
+
+function Campaign() {
+    const {campaignId} = useParams();
+    const [sheetList, setSheetList] = useState([]);
+    useEffect(()=>{
+        fetch('/sample_data.json')
+          .then(x => x.json())
+          .then(data => {
+            setSheetList(data.sheets.filter(x => x.campaign === Number(campaignId)));
+          })
+    },[campaignId])
+
+    return (<div className="preview-grid">
+        {sheetList.map((x, i) => (<SheetPreview {...x} key={i}/>))}
     </div>)
 }
 
-export default Campaign
+export default Campaign;

@@ -1,13 +1,27 @@
-import {useState} from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router'
+import { useState, useEffect } from 'react'
+import {BrowserRouter, Navigate, Route, Routes} from 'react-router'
 import reactLogo from './assets/react.svg'
-import data from './assets/sample_data.json'
 import './App.css'
-import Campaign from "./components/Campaign.jsx";
 import Sheet from "./components/Sheet.jsx";
+import CampaignPreview from "./components/CampaignPreview.jsx";
+import Campaign from "./components/Campaign.jsx";
+import SheetPreview from "./components/SheetPreview.jsx";
 
 function App() {
-    const [count, setCount] = useState(0)
+    const [sheetList, setSheetList] = useState([]);
+    const [campaignList, setCampaignList] = useState([]);
+    useEffect(()=>{
+        fetch('/sample_data.json')
+          .then(x => x.json())
+          .then(data => {
+            setSheetList(data.sheets);
+          })
+        fetch('/sample_campaigns.json')
+          .then(x => x.json())
+          .then(data => {
+            setCampaignList(data.campaigns);
+          })
+    },[])
 
     return (<>
         <BrowserRouter>
@@ -18,15 +32,16 @@ function App() {
                 </h1>
             </header>
             <Routes className="container">
+                <Route path="/" element={<Navigate to="/campaign" replace />} />
+                <Route path="/campaign" element={<div className="preview-grid">
+                    {campaignList.map((x, i) => (<CampaignPreview {...x} key={i}/>))}
+                </div>}/>
+                <Route path="/sheet" element={<div className="preview-grid">
+                    {sheetList.map((x, i) => (<SheetPreview {...x} key={i}/>))}
+                </div>}/>
                 <Route
-                    path="/campaign"
-                    element={
-                        <div className="campaign-grid">
-                            {data.sheets.map((x, i) => (
-                                <Campaign {...x} key={i} />
-                            ))}
-                        </div>
-                    }
+                    path="/campaign/:campaignId"
+                    element={<Campaign/>}
                 />
                 <Route path="/sheet/:sheetId" element={<Sheet/>}/>
             </Routes>
