@@ -19,7 +19,7 @@ function Sheet() {
             <span className='sheet-box'>Points de Destin : {sheet.fate_points}</span>
         </div>
         <h3>Aspects :</h3>
-        <div>{sheet.aspects.map(aspect => (<p key={aspect}>{aspect}</p>))}</div>
+        <div>{sheet.aspects.map(aspect => (<p key={aspect.name}>{aspect.name}</p>))}</div>
         
         <h3>Compétences :</h3>
         <table >
