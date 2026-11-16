@@ -1,0 +1,31 @@
+- name: Consulter une fiche
+  url: http://localhost/
+  actions:
+    - name: Consulter les campagnes
+      type: scroll
+    - name: Choisir une campagne
+      type: click
+      element: div:nth-of-type(1)
+      pageChange: true
+      waitForSelector: div.campaign:nth-of-type(1)
+    - name: Consulter les fiches de la campagne 
+      type: scroll
+    - name: Choisir une fiche 
+      type: click
+      element: div.campaign:nth-of-type(1)
+      pageChange: true
+      waitForSelector: \#root > span
+    - name: Consulter la fiche
+      type: scroll
+    - name: Retourner vers la page de campagne
+      type: click
+      element: \#root > span
+      pageChange: true
+      waitForSelector: div.campaign:nth-of-type(1)
+    - name: Choisir une autre fiche 
+      type: click
+      element: div.campaign:nth-of-type(2)
+      pageChange: true
+      waitForSelector: \#root > span
+    - name: Lire la fiche
+      type: scroll
