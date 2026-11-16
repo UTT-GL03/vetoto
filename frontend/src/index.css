@@ -4,7 +4,7 @@
 }
 
 /* Gallery / Grid Container */
-.campaign-grid {
+.preview-grid {
   display: grid;
   /* Automatically creates 2 or 3 responsive columns based on screen width */
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -50,6 +50,7 @@
 }
 
 .sheet-box {
+  display: inline-block;
   border: 1px solid var(--border, #ccc);
   border-radius: 8px;
   background-color: var(--accent-bg, #f9f9f9);
@@ -58,7 +59,19 @@
   margin: 6px;
   white-space: nowrap;
 }
-.skills {
+.table-box{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  background-color: var(--accent-bg, #f9f9f9);
+  padding: 12px;
+  white-space: nowrap;
+}
+.row {
  display:flex;
  flex-direction: row;
  justify-content: left;

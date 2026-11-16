@@ -1,0 +1,28 @@
+{
+"campaigns": [
+    {
+    "id": "0",
+    "name": "Bibendum eget accumsan eros.",
+    "aspects": [
+        {"name": "Etiam facilisis mauris arcu tempus. Arcu aenean scelerisque eros placerat eti i ante, el ultrices enim vel."},
+        {"name": "Leo suscipit sapien ligula ultricies pharetra. Pellentesque cit placerat tristique. Posuere tem vitae pharetra posuere."}
+    ]
+    },
+
+    {
+    "id": "1",
+    "name": "Condimentum bibendum.",
+    "aspects": [
+        {"name": "Magna ali consectetur vulputate tempor. Elementum nam tempor auctor i lorem aliquam sodales. Elementum en tem ipsum. Augue diam metus."}
+    ]
+    },
+
+    {
+    "id": "2",
+    "name": "Lacinia erat.",
+    "aspects": [
+        {"name": "Magna condimentum eti pulvinar neque en quis est tincidunt."}
+    ]
+    }
+]
+}
