@@ -49,12 +49,21 @@
   color: #64748b;
 }
 
+.back-button {
+  display: inline-block;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  background-color: var(--accent-bg, #f9f9f9);
+  padding: 12px;
+  margin: 6px;
+  white-space: nowrap;
+}
+
 .sheet-box {
   display: inline-block;
   border: 1px solid var(--border, #ccc);
   border-radius: 8px;
   background-color: var(--accent-bg, #f9f9f9);
-  gap: 6;
   padding: 12px;
   margin: 6px;
   white-space: nowrap;
