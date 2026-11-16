@@ -14,18 +14,18 @@
       type: click
       element: div.campaign:nth-of-type(1)
       pageChange: true
-      waitForSelector: \#root > span
+      waitForSelector: .back-button
     - name: Consulter la fiche
       type: scroll
     - name: Retourner vers la page de campagne
       type: click
-      element: \#root > span
+      element: .back-button
       pageChange: true
       waitForSelector: div.campaign:nth-of-type(1)
     - name: Choisir une autre fiche 
       type: click
       element: div.campaign:nth-of-type(2)
       pageChange: true
-      waitForSelector: \#root > span
+      waitForSelector: .back-button
     - name: Lire la fiche
       type: scroll
