@@ -44,6 +44,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: EcoIndex
-          path: Consulterlesactualites.html
+          path: Consulterunefiche.html
       - name: Watch frontend initial payload
         run: curl --silent localhost
