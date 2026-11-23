@@ -9,6 +9,11 @@ runs:
       with:
         name: frontend-build
         path: frontend/dist
+    - name: Generate testing dataset
+      run: |
+        npm install dummy-json
+        npx dummy-json@latest ./docs/sample_campaigns_scaling.hbs > ./frontend/sample_campaigns.json
+        npx dummy-json@latest ./docs/sample_sheets_scaling.hbs > ./frontend/sample_data.json
     - name: Start containers
       run: |
         docker compose up --detach
